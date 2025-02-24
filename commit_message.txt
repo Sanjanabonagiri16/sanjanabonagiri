@@ -16,4 +16,14 @@
 - Enhanced button styles and interactions
 - Added responsive container for calculator
 - Fixed pointer events handling
-- Added backdrop blur for better visibility 
+- Added backdrop blur for better visibility
+
+[Cursor] Convert Scientific Calculator to Quick Link
+
+- Changed calculator from popup to dedicated page
+- Updated footer dock to link directly to calculator page
+- Improved calculator page layout with side-by-side documentation
+- Added back navigation to tools page
+- Enhanced documentation with clear usage instructions
+- Simplified footer dock implementation
+- Improved accessibility and user experience 
