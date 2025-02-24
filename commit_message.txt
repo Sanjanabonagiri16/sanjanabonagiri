@@ -1,8 +1,19 @@
-[Cursor] Integrate Scientific Calculator into Tools Section
+[Cursor] Fix Scientific Calculator Footer Integration
 
-- Created dedicated Scientific Calculator page with documentation
-- Added Tools section with overview of all available tools
-- Updated FooterDock with Tools link
-- Modified ScientificCalculator component to support embedded mode
-- Added proper navigation between tools and calculator
-- Improved documentation and examples 
+- Fixed calculator positioning and visibility in footer dock
+- Added active state styling for calculator button
+- Removed duplicate toggle button from calculator component
+- Added Clear button to calculator
+- Improved calculator state management
+- Fixed z-index and animation issues
+- Added proper whitespace handling for button labels
+
+[Cursor] Fix Scientific Calculator Visibility and Positioning
+
+- Fixed calculator positioning in footer
+- Added proper z-index layering for calculator and dock
+- Improved calculator animations and transitions
+- Enhanced button styles and interactions
+- Added responsive container for calculator
+- Fixed pointer events handling
+- Added backdrop blur for better visibility 
