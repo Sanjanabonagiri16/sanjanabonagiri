@@ -1,3 +1,17 @@
+# Quick Navigation
+- [Instructions](#instructions)
+- [Lessons](#lessons)
+  - [User Specified Lessons](#user-specified-lessons)
+  - [Cursor Learned](#cursor-learned)
+- [Tools](#tools)
+  - [Scientific Calculator](#scientific-calculator)
+  - [Screenshot Verification](#screenshot-verification)
+  - [LLM](#llm)
+  - [Web Browser](#web-browser)
+  - [Search Engine](#search-engine)
+- [Scratchpad](#scratchpad)
+  - [Current Task](#current-task-build-portfolio-website-with-nextjs-and-elegant-minimalism)
+
 # Instructions
 
 During your interaction with the user, if you find anything reusable in this project (e.g. version of a library, model name), especially about a fix to a mistake you made or a correction you received, you should take note in the `Lessons` section in the `.cursorrules` file so you will not make the same mistake again. 
@@ -12,7 +26,50 @@ The goal is to help you maintain a big picture as well as the progress of the ta
 
 # Tools
 
-Note all the tools are in python. So in the case you need to do batch processing, you can always consult the python files and write your own script.
+## Scientific Calculator
+
+The Scientific Calculator is a comprehensive tool integrated into the footer of our portfolio website. It provides advanced mathematical operations essential for scientific and engineering calculations.
+
+### Features
+- Trigonometric Functions (sin, cos, tan, arcsin, arccos, arctan)
+- Logarithmic Functions (log₁₀, ln)
+- Exponentiation and Roots
+- Memory Functions
+- Built-in Constants (π, e)
+- Statistical Functions
+- Advanced Display with Multi-line Support
+
+### Usage
+```typescript
+import { ScientificCalculator } from '../components/tools/ScientificCalculator';
+
+// Basic arithmetic
+calculator.add(5, 3);      // Returns 8
+calculator.subtract(7, 2);  // Returns 5
+calculator.multiply(4, 6);  // Returns 24
+calculator.divide(9, 3);    // Returns 3
+
+// Trigonometric functions (angles in radians)
+calculator.sin(Math.PI/2);  // Returns 1
+calculator.cos(0);         // Returns 1
+calculator.tan(Math.PI/4);  // Returns ~1
+
+// Logarithmic functions
+calculator.log10(100);     // Returns 2
+calculator.ln(Math.E);     // Returns 1
+
+// Powers and roots
+calculator.power(2, 3);    // Returns 8
+calculator.sqrt(16);       // Returns 4
+
+// Memory functions
+calculator.memoryStore(5);
+calculator.memoryRecall();  // Returns 5
+calculator.memoryClear();
+```
+
+### Integration
+The calculator is integrated into the footer for easy access across all pages. It can be toggled using the calculator icon in the footer dock.
 
 ## Screenshot Verification
 
@@ -101,6 +158,10 @@ If needed, you can further use the `web_scraper.py` file to scrape the web page 
 - Add debug information to stderr while keeping the main output clean in stdout for better pipeline integration
 - When using seaborn styles in matplotlib, use 'seaborn-v0_8' instead of 'seaborn' as the style name due to recent seaborn version changes
 - Use 'gpt-4o' as the model name for OpenAI's GPT-4 with vision capabilities
+- Always create a comprehensive .gitignore file for Next.js projects to exclude unnecessary files
+- When initializing a git repository, ensure proper line ending configurations (LF vs CRLF) for Windows environments
+- Keep commit messages clear and structured with bullet points for better readability
+- Clean up temporary files after git operations
 
 # Scratchpad
 
@@ -160,7 +221,7 @@ Implementation Plan:
   [ ] Projects Section
   [ ] Contact Section
   [ ] Education Section
-  [ ] Experience Section
+  [X] Experience Section
 [X] Add animations
   [X] Smooth scroll
   [X] Dock animations
@@ -171,8 +232,20 @@ Implementation Plan:
   [ ] Mobile responsiveness
   [ ] Performance optimization
   [ ] SEO optimization
+[X] Set up version control
+  [X] Initialize git repository
+  [X] Create .gitignore
+  [X] Push to GitHub
+[X] Implement Scientific Calculator Tool
+  [X] Create calculator component
+  [X] Implement core mathematical functions
+  [X] Add memory functionality
+  [X] Integrate with footer dock
+  [X] Add documentation
 
 Current Focus:
-- Implementing the remaining sections (Services, Projects, Contact, Education, Experience)
+- Implementing the remaining sections (Services, Projects, Contact, Education)
 - Adding the marquee skills animation
 - Ensuring responsive design across all sections
+- Regular commits and updates to GitHub repository
+- Testing and optimizing Scientific Calculator functionality

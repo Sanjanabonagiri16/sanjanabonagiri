@@ -1,0 +1,12 @@
+[Cursor] Add Scientific Calculator Tool
+
+- Implemented Scientific Calculator component with advanced mathematical functions
+- Created FooterDock component with social links and calculator integration
+- Added calculator styles to global CSS
+- Updated documentation in .cursorrules
+- Features include:
+  - Trigonometric functions (sin, cos, tan)
+  - Logarithmic functions (log, ln)
+  - Memory operations (M+, M-, MR, MC)
+  - Basic arithmetic operations
+  - Responsive design with animations 
