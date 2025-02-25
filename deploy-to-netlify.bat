@@ -10,7 +10,7 @@ if %ERRORLEVEL% neq 0 (
 )
 
 echo Deploying to Netlify...
-call netlify deploy --prod
+call netlify deploy --build --prod
 
 echo Deployment complete!
 pause 

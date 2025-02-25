@@ -13,6 +13,6 @@ fi
 
 # Deploy to Netlify
 echo "Deploying to Netlify..."
-netlify deploy --prod
+netlify deploy --build --prod
 
 echo "Deployment complete!" 
