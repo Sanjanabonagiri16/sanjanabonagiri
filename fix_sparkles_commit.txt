@@ -1,0 +1,5 @@
+[Cursor] Fix Sparkles component type errors
+
+- Fixed type errors with Sparkles component in about page
+- Fixed type errors with Sparkles component in education page
+- Properly wrapped Sparkles components with span elements 
