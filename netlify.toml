@@ -1,10 +1,12 @@
 [build]
+  base = "/"
   command = "npm run build"
   publish = ".next"
+  ignore = "git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF ./package-lock.json"
 
 [build.environment]
-  NETLIFY_NEXT_PLUGIN_SKIP = "false"
-  NEXT_USE_NETLIFY_EDGE = "true"
+  NODE_VERSION = "18"
+  NPM_VERSION = "9"
 
 [[plugins]]
   package = "@netlify/plugin-nextjs" 
