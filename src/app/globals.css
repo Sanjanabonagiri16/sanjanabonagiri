@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Calculator Styles */
+.calc-btn {
+  @apply bg-[#1A6F94]/80 text-[#E5E9E6] p-3.5 rounded-xl 
+         transition-all duration-200 backdrop-blur-sm
+         active:scale-95 transform font-medium text-sm
+         hover:bg-[#124E66] hover:shadow-lg hover:shadow-[#124E66]/20
+         border border-[#4A5A66]/20;
+}
+
+.calc-btn.memory {
+  @apply bg-[#2A363F]/80 text-[#748D92] 
+         hover:bg-[#1A6F94]/80 hover:text-[#E5E9E6]
+         border-[#4A5A66]/30;
+}
+
+.calc-btn.function {
+  @apply bg-[#1A6F94]/90 font-semibold hover:bg-[#124E66]
+         text-[#E5E9E6] border-[#4A5A66]/40
+         hover:shadow-lg hover:shadow-[#124E66]/30;
+}
+
+.calc-btn.operator {
+  @apply bg-[#124E66] font-bold hover:bg-[#0D3B4D]
+         text-[#E5E9E6] border-[#4A5A66]/50
+         hover:shadow-lg hover:shadow-[#124E66]/40;
+}
+
+.calc-btn.equals {
+  @apply bg-[#0D3B4D] font-bold hover:bg-[#092A38]
+         text-[#E5E9E6] border-[#4A5A66]/60
+         hover:shadow-lg hover:shadow-[#124E66]/50;
+}
+
+/* Calculator Display */
+.calc-display {
+  @apply bg-[#0A1A20]/90 backdrop-blur-md rounded-xl p-4
+         border border-[#4A5A66]/20 shadow-inner shadow-black/20;
+}
+
+.calc-display-text {
+  @apply font-mono text-right text-2xl text-[#E5E9E6]
+         transition-all duration-200 tracking-wider;
+}
+
+/* Calculator Container */
+.calculator-container {
+  @apply fixed bottom-20 left-1/2 -translate-x-1/2 z-50 
+         w-[320px] max-w-[90vw] rounded-2xl
+         bg-[#1A2830]/95 backdrop-blur-xl p-5
+         border border-[#4A5A66]/30 shadow-2xl;
+}
+
+/* Calculator Grid */
+.calc-grid {
+  @apply grid grid-cols-4 gap-2.5 mt-4;
+}
+
+/* Memory Display */
+.memory-indicator {
+  @apply absolute top-2 left-2 text-xs font-medium
+         text-[#748D92] bg-[#2A363F]/50 px-2 py-1 rounded-md
+         border border-[#4A5A66]/20;
+}
