@@ -1,0 +1,24 @@
+# Ignore nested project
+portfolio/
+
+# Ignore Netlify files
+.netlify/
+netlify/
+
+# Other files to ignore
+*.md
+context.md
+fix_sparkles_commit.txt
+switch_to_vercel.txt
+commit_message.txt
+unitconverter.md
+hexadecimal converter.md
+probability and complex calculator.md
+statisticscalculator.md
+polynomialcalculator.md
+creditcardpayoffcalculator.md
+savingsgoalcalculator.md
+timecardcalculator.md
+linearequations.md
+matrixcalculator.md
+h -u origin main 

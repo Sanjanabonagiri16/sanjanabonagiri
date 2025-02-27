@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { Playfair_Display } from 'next/font/google';
 import { DockNavigation } from '../components/layout/DockNavigation';
+import Image from 'next/image';
 import { 
   Code, 
   ExternalLink, 
@@ -164,10 +165,13 @@ export default function Projects() {
                 {/* Project Image */}
                 <div className="lg:w-1/2">
                   <div className="relative aspect-video rounded-xl overflow-hidden">
-                    <img 
+                    <Image 
                       src={featuredProject.image} 
                       alt={featuredProject.title}
+                      width={800}
+                      height={450}
                       className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
+                      priority
                     />
                     <div className="absolute inset-0 bg-[#124E66]/20 group-hover:bg-transparent transition-colors duration-500" />
                   </div>
