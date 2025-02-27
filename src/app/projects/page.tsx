@@ -22,7 +22,7 @@ const playfair = Playfair_Display({ subsets: ['latin'] });
 const featuredProject = {
   title: "HopeFund",
   description: "A crowdfunding platform built with Next.js and Solidity, enabling transparent and decentralized fundraising for social causes.",
-  image: "/hopefund.png",
+  image: "./hopefund.png",
   liveUrl: "https://hopefund.vercel.app",
   githubUrl: "https://github.com/sanjana-19o8/hopefund",
   technologies: ["Next.js", "Solidity", "Ethereum", "Web3.js", "Tailwind CSS"],
@@ -172,6 +172,8 @@ export default function Projects() {
                       height={450}
                       className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
                       priority
+                      unoptimized
+                      style={{ maxWidth: '100%', height: 'auto' }}
                     />
                     <div className="absolute inset-0 bg-[#124E66]/20 group-hover:bg-transparent transition-colors duration-500" />
                   </div>
